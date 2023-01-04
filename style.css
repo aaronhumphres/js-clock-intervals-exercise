@@ -26,6 +26,7 @@ body {
 #minute {
     position: absolute;
     transform-origin: 0 100%;
+    
 
 }
 
@@ -33,4 +34,6 @@ body {
     position: absolute;
     transform-origin: 0 100%;
 
+
 }
+
