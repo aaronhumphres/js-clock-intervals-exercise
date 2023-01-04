@@ -4,14 +4,14 @@ body {
     align-items: center;
 }
 
-#clock {
+.clock {
     position: absolute;
 
 
 
 }
 
-#clock img {
+#face {
     position: absolute;
     
     
