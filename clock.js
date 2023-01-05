@@ -6,13 +6,17 @@ function getTime() {
   const now = new Date()
   const seconds = now.getSeconds()
   const minutes = now.getMinutes()
-  const hours = now.getHours()
-  
-  const timeInterval = 6
-  
-  secondsHand.style.transform = 'rotate(' + (second + timeInterval) + 'deg)'
-  minutesHand.style.transform = 'rotate(' + (minute + timeInterval + second / 10) + 'deg)' 
-  hoursHand.style.transform = 'rotate(' + (hour * 30 + minute / 2) + 'deg)' 
+  let hours = now.getHours() 
+   if (hours > 12) {
+    hours = hours  - 12
+   }
+  let hourDegrees = 30
+  const degreesModifier = 6
+  //console.log(hours)
+
+  secondsHand.style.transform = 'rotate(' + (seconds * degreesModifier) + 'deg)'
+  minutesHand.style.transform = 'rotate(' + (minutes * degreesModifier) + 'deg)' 
+  hoursHand.style.transform = 'rotate(' + (hours * hourDegrees) + 'deg)' 
   
   
 }

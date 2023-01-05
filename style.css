@@ -1,6 +1,4 @@
-body {
- 
-}
+
 
 .clock {
     position: absolute;
@@ -17,20 +15,20 @@ body {
 
 #hour {
     position: absolute;
-    transform-origin: 0 100%;
+  
 
 }
 
 #minute {
     position: absolute;
-    transform-origin: 0 100%;
+    
     
 
 }
 
 #second {
     position: absolute;
-    transform-origin: 0 100%;
+  
 
 
 }
